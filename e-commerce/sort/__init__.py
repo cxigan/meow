@@ -7,11 +7,12 @@
 sort(arr, compare).
 """
 from . import compare as _compare
-from . import quick, insert
+from . import quick, insert, merge
 
 _ALGORITHMS = {
     "quick": quick.sort,    # быстрая, нестабильная
     "insert": insert.sort,  # вставками, стабильная
+    "merge": merge.sort,    # слиянием, стабильная
 }
 
 
